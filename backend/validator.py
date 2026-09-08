@@ -1,4 +1,4 @@
-from backend.ai_analyzer import ResumeAnalysis
+from ai_analyzer import ResumeAnalysis
 
 
 def validate_analysis(analysis):
