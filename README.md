@@ -228,3 +228,10 @@ The application was tested with:
 The complete application flow was verified:
 
 **Upload Resume → Extract Text → Send to AI → Validate Response → Display Results**
+
+## Live Demo
+
+**Live Application:** [https://ai-resume-analyzer-1-2idy.onrender.com/]
+
+> **Note:** The application uses the Gemini API for resume analysis. The API may have usage or quota limits. If the application stops generating analysis because the API quota has been reached, please contact **[padmanabhsaravade@gmail.com](mailto:padmanabhsaravade@gmail.com)** to request a new API key and continue using the application.
+
