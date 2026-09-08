@@ -31,7 +31,7 @@ analyzeButton.addEventListener("click", async function () {
 
   try {
     // Send PDF to FastAPI
-    const response = await fetch("https://ai-resume-analyzer-485q.onrender.com", {
+    const response = await fetch("https://ai-resume-analyzer-485q.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
