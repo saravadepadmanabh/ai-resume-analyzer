@@ -212,19 +212,6 @@ The following areas were verified or corrected manually:
 * The quality of feedback depends on the quality and completeness of the resume text extracted.
 * The current application does not provide job-description matching.
 
-## Future Improvements
-
-Possible future improvements include:
-
-* Job Description vs Resume matching.
-* Resume-job match percentage.
-* Section-wise resume scoring.
-* ATS-friendly resume analysis.
-* Keyword highlighting.
-* Downloadable analysis reports.
-* OCR support for scanned resumes.
-* More detailed resume section improvement suggestions.
-
 ## Testing
 
 The application was tested with:
