@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="brand">
+            <span class="brand-mark">RA</span>
+            <span class="brand-name">Resume Analyzer</span>
+        </div>
+
+        <h1>See your resume the way a recruiter does.</h1>
+
+        <p>
+            Upload your resume and get AI-powered feedback in seconds &mdash; scored, sorted and ready to act on.
+        </p>
+
+        <div class="upload-box">
+
+            <label for="resume">
+                <span class="upload-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M12 3v12" stroke-linecap="round"/>
+                        <path d="M7.5 8L12 3l4.5 5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 16.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2.5" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                Choose your resume
+                <span class="upload-hint">PDF or DOCX</span>
+            </label>
+
+            <input
+                type="file"
+                id="resume"
+                accept=".pdf,.docx"
+            >
+
+            <button id="analyzeButton">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <p class="fine-print">Your file is analyzed securely and never stored.</p>
+
+    </div>
+
+<!-- lazy Loading -->
+
+<div id="loading" class="loading-overlay">
+
+    <div class="loading-box">
+
+        <div class="spinner"></div>
+
+        <h2>Analyzing Resume&hellip;</h2>
+
+        <p>
+            Please wait while AI analyzes your resume.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Results Section -->
+
+<div id="results" class="results" style="display: none;">
+
+    <h2>Resume Analysis</h2>
+
+    <!-- Score -->
+    <div class="score-card">
+
+        <h3>Overall Resume Score</h3>
+
+        <div class="score-ring">
+            <div id="score" class="score">
+                0/100
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Profile Summary -->
+    <div class="result-card card-summary">
+
+        <h3>Candidate Profile Summary</h3>
+
+        <p id="profileSummary"></p>
+
+    </div>
+
+
+    <!-- Strengths -->
+    <div class="result-card card-strengths">
+
+        <h3>Key Strengths</h3>
+
+        <ul id="strengths"></ul>
+
+    </div>
+
+
+    <!-- Areas for Improvement -->
+    <div class="result-card card-improvements">
+
+        <h3>Areas for Improvement</h3>
+
+        <ul id="improvements"></ul>
+
+    </div>
+
+
+    <!-- Missing Skills or Sections -->
+    <div class="result-card card-missing">
+
+        <h3>Missing Skills or Sections</h3>
+
+        <ul id="missing"></ul>
+
+    </div>
+
+
+    <!-- Suggestions -->
+    <div class="result-card card-suggestions">
+
+        <h3>Suggestions to Improve Resume</h3>
+
+        <ul id="suggestions"></ul>
+
+    </div>
+
+</div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
