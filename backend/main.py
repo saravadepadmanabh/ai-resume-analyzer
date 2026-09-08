@@ -1,10 +1,10 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.pdf_parser import extract_text_from_pdf
-from backend.ai_analyzer import analyze_resume
-from backend.validator import validate_analysis
-from backend.docx_parser import extract_text_from_docx
+from pdf_parser import extract_text_from_pdf
+from ai_analyzer import analyze_resume
+from validator import validate_analysis
+from docx_parser import extract_text_from_docx
 
 
 app = FastAPI()
